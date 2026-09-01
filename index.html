@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internationalization at IIM Mumbai | International Relations</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#programmes" class="nav-link">Programmes</a></li>
+          <li class="nav-item"><a href="#exchange" class="nav-link">Exchange</a></li>
+          <li class="nav-item"><a href="#partners" class="nav-link">Partners</a></li>
+          <li class="nav-item"><a href="#campus-life" class="nav-link">Campus Life</a></li>
+          <li class="nav-item"><a href="#know-mumbai" class="nav-link">Know Mumbai</a></li>
+          <li class="nav-item"><a href="#rankings" class="nav-link">Rankings</a></li>
+          <li class="nav-item"><a href="#brochure" class="nav-link" id="navBrochureBtn">Brochure</a></li>
+          <li class="nav-item"><a href="#connect" class="nav-link">Connect</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#programmes" class="mobile-nav-link">Programmes</a></li>
+        <li><a href="#exchange" class="mobile-nav-link">Exchange</a></li>
+        <li><a href="#partners" class="mobile-nav-link">Partners</a></li>
+        <li><a href="#campus-life" class="mobile-nav-link">Campus Life</a></li>
+        <li><a href="#know-mumbai" class="mobile-nav-link">Know Mumbai</a></li>
+        <li><a href="#rankings" class="mobile-nav-link">Rankings</a></li>
+        <li><a href="#brochure" class="mobile-nav-link" id="mobileBrochureBtn">Brochure</a></li>
+        <li><a href="#connect" class="mobile-nav-link">Connect</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-split-grid">
+      <!-- Left Content Column -->
+      <div class="hero-content-pane">
+        <div class="hero-content-inner">
+          <div class="hero-tag">2026–27</div>
+          <h1 class="hero-title">Internationalization at IIM Mumbai</h1>
+          <p class="hero-description">
+            60+ years of legacy, 17 global partner institutions, and a campus built for future-ready leaders navigating a connected world.
+          </p>
+          <div class="hero-actions">
+            <a href="#exchange" class="btn btn-primary">View Exchange Programme</a>
+            <a href="#download-brochure" class="btn btn-outline" id="heroBrochureBtn">Download Brochure</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image Column -->
+      <div class="hero-image-pane">
+        <img src="assets/hero-campus.jpg" alt="IIM Mumbai iconic red-brick academic tower against sky" class="hero-img">
+        <div class="image-overlay-gradient"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Metrics Strip -->
+  <section class="stats-ribbon" id="metrics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">17+</div>
+          <div class="stat-label">Partner universities, 4 continents</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <div class="stat-value">12,000+</div>
+          <div class="stat-label">Alumni network</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <div class="stat-value">NIRF #6</div>
+          <div class="stat-label">Management, India, 2024</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <div class="stat-value">60+ yrs</div>
+          <div class="stat-label">Of academic legacy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About The Institute Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-tag">ABOUT THE INSTITUTE</div>
+      <h2 class="section-title">
+        Formerly NITIE, built with the UN — now a top-ranked management school
+      </h2>
+
+      <div class="about-grid">
+        <!-- Campus Image -->
+        <div class="about-image-wrapper">
+          <img src="assets/about-campus.jpg" alt="IIM Mumbai Main Campus Tower with green landscape and parking" class="about-campus-img">
+        </div>
+
+        <!-- Descriptive Content -->
+        <div class="about-text-content">
+          <p class="about-paragraph">
+            Indian Institute of Management Mumbai was established in 1963 by the Government of India with the assistance of the United Nations Development Programme and the International Labour Organization.
+          </p>
+          <p class="about-paragraph">
+            The institute develops future-ready leaders through analytical thinking, innovation, ethical leadership, and informed decision-making — taught entirely in English, in the heart of India's financial capital.
+          </p>
+
+          <!-- Badges / Accreditations -->
+          <div class="badges-row">
+            <div class="badge-pill">AACSB Accredited</div>
+            <div class="badge-pill">EFMD Global Member</div>
+            <div class="badge-pill">Fortune India Rank 8</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Partner With Us Section -->
+  <section class="why-partner-section" id="partners">
+    <div class="container">
+      <div class="section-tag">WHY PARTNER WITH US</div>
+
+      <div class="partner-cards-grid">
+        <!-- Card 1 -->
+        <div class="partner-card">
+          <div class="card-category">Alliances</div>
+          <h3 class="card-heading">Global academic network</h3>
+          <p class="card-description">
+            Bilateral exchange agreements spanning the US, Europe, Latin America and Asia, from MET ties to EMLYON and Durham.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="partner-card">
+          <div class="card-category">Exchange</div>
+          <h3 class="card-heading">No-tuition exchange terms</h3>
+          <p class="card-description">
+            Students from partner institutions pay no tuition fees under the bilateral agreement, with on-campus housing guaranteed.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="partner-card">
+          <div class="card-category">Outcomes</div>
+          <h3 class="card-heading">A ranked, accredited institute</h3>
+          <p class="card-description">
+            NIRF #6, AACSB and EFMD accredited, with 500+ alumni CXOs and 150+ startups founded.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section class="quick-links-section" id="quick-links">
+    <div class="container">
+      <div class="section-tag">QUICK LINKS</div>
+
+      <div class="quick-links-grid">
+        <a href="#programmes" class="quick-link-card">
+          <span class="quick-link-text">Programmes</span>
+          <span class="quick-link-arrow">→</span>
+        </a>
+        <a href="#partners" class="quick-link-card">
+          <span class="quick-link-text">Partner Institutions</span>
+          <span class="quick-link-arrow">→</span>
+        </a>
+        <a href="#rankings" class="quick-link-card">
+          <span class="quick-link-text">Rankings</span>
+          <span class="quick-link-arrow">→</span>
+        </a>
+        <a href="#connect" class="quick-link-card">
+          <span class="quick-link-text">Connect with Us</span>
+          <span class="quick-link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="connect-section">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span class="institute-name">IIM Mumbai</span>
+            <span class="sub-name">INTERNATIONAL RELATIONS OFFICE</span>
+          </div>
+          <p class="footer-tagline">
+            Fostering global scholastic cooperation, cross-cultural mobility, and management research excellence since 1963.
+          </p>
+          <div class="footer-address">
+            📍 Vihar Lake Road, Powai, Mumbai, Maharashtra 400087, India
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Academic Exchange</h4>
+          <ul class="footer-links">
+            <li><a href="#programmes">Inbound Exchange Students</a></li>
+            <li><a href="#programmes">Outbound Student Mobility</a></li>
+            <li><a href="#exchange">Dual Degree & Summer Schools</a></li>
+            <li><a href="#partners">Faculty Exchange Programmes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Campus & City</h4>
+          <ul class="footer-links">
+            <li><a href="#campus-life">Life at Powai Campus</a></li>
+            <li><a href="#know-mumbai">Discover Mumbai</a></li>
+            <li><a href="#campus-life">Hostel & Guest Accommodations</a></li>
+            <li><a href="#brochure">International Student Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p class="contact-item"><strong>Email:</strong> ir@iimmumbai.ac.in</p>
+          <p class="contact-item"><strong>Phone:</strong> +91 22 2857 3371</p>
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-btn">in</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-btn">𝕏</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-btn">ig</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Indian Institute of Management Mumbai. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Exchange</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Brochure Modal -->
+  <div class="modal-backdrop" id="brochureModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge">Official Document</div>
+        <h3 class="modal-title">Download 2026–27 International Relations Brochure</h3>
+        <p class="modal-subtitle">Get complete details on course curricula, partner universities, visa guidelines, and housing terms.</p>
+      </div>
+      <form class="modal-form" id="brochureForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="e.g. Dr. Eleanor Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="institution">University / Institution</label>
+          <input type="text" id="institution" placeholder="e.g. EMLYON Business School" required>
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Official Email</label>
+          <input type="email" id="emailAddress" placeholder="e.g. e.vance@em-lyon.edu" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Download Official PDF</button>
+      </form>
+      <div class="modal-success-msg" id="modalSuccessMsg">
+        🎉 Thank you! The international prospectus download has started.
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
