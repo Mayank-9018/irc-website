@@ -93,55 +93,75 @@
           </p>
         </div>
 
-        <!-- Vlogs / Gallery Thumbnails Row with Embedded YouTube Videos & Shorts -->
-        <div class="vlogs-media-grid">
+        <!-- Vlogs & Shorts Showcase Container (16:9 Landscape Tour + 9:16 Vertical Shorts) -->
+        <div class="vlogs-showcase-split">
           
-          <!-- 1. Campus Tour Full Video -->
-          <div class="vlog-media-item item-large">
-            <iframe 
-              src="https://www.youtube-nocookie.com/embed/qp5Y1AIu3TQ?rel=0" 
-              title="IIM Mumbai Campus Tour" 
-              class="vlog-iframe"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
+          <!-- Left: Featured Full Campus Tour (16:9 Widescreen) -->
+          <div class="featured-tour-box">
+            <div class="video-ratio-16-9">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/qp5Y1AIu3TQ?rel=0" 
+                title="IIM Mumbai Campus Tour" 
+                class="vlog-iframe"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-meta-bar">
+              <span class="video-tag-pill">CAMPUS TOUR</span>
+              <h3 class="video-meta-title">IIM Mumbai Campus Tour 2026</h3>
+            </div>
           </div>
 
-          <!-- 2. Campus Life YouTube Short (x9PI4BP8kLg) -->
-          <div class="vlog-media-item item-portrait">
-            <iframe 
-              src="https://www.youtube-nocookie.com/embed/x9PI4BP8kLg?rel=0" 
-              title="IIM Mumbai Campus Life Short" 
-              class="vlog-iframe"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
+          <!-- Right: 3 Vertical YouTube Shorts (9:16 Mobile Ratio) -->
+          <div class="shorts-portrait-grid">
+            
+            <!-- Short 1: Campus Life -->
+            <div class="short-card-item">
+              <div class="video-ratio-9-16">
+                <iframe 
+                  src="https://www.youtube-nocookie.com/embed/x9PI4BP8kLg?rel=0" 
+                  title="IIM Mumbai Campus Life Short" 
+                  class="vlog-iframe"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="short-label-badge">Campus Life</div>
+            </div>
 
-          <!-- 3. Avartan Annual Business Fest Short -->
-          <div class="vlog-media-item item-portrait">
-            <iframe 
-              src="https://www.youtube-nocookie.com/embed/ToFHha6dnx4?rel=0" 
-              title="Avartan - Annual Business Fest" 
-              class="vlog-iframe"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
+            <!-- Short 2: Avartan Fest -->
+            <div class="short-card-item">
+              <div class="video-ratio-9-16">
+                <iframe 
+                  src="https://www.youtube-nocookie.com/embed/ToFHha6dnx4?rel=0" 
+                  title="Avartan - Annual Business Fest" 
+                  class="vlog-iframe"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="short-label-badge">Avartan Fest</div>
+            </div>
 
-          <!-- 4. Onam Celebration Short -->
-          <div class="vlog-media-item item-portrait">
-            <iframe 
-              src="https://www.youtube-nocookie.com/embed/OI2v0LrsQpo?rel=0" 
-              title="IIM Mumbai Onam Celebration" 
-              class="vlog-iframe"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
+            <!-- Short 3: Onam Celebration -->
+            <div class="short-card-item">
+              <div class="video-ratio-9-16">
+                <iframe 
+                  src="https://www.youtube-nocookie.com/embed/OI2v0LrsQpo?rel=0" 
+                  title="IIM Mumbai Onam Celebration" 
+                  class="vlog-iframe"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="short-label-badge">Onam Celebrations</div>
+            </div>
+
           </div>
 
         </div>
