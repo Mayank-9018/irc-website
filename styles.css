@@ -421,7 +421,38 @@ ul {
 }
 
 .about-header-block {
-  margin-bottom: 2.25rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.about-header-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-accreditation-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.accreditation-logo {
+  height: 52px;
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.accreditation-logo:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 .about-main-title {
