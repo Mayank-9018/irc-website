@@ -100,6 +100,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Partner Institutions Region Filter Functionality ---
+  const regionPills = document.querySelectorAll('.region-pill-btn');
+  const matrixCells = document.querySelectorAll('.matrix-cell');
+
+  if (regionPills.length > 0 && matrixCells.length > 0) {
+    regionPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        regionPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+
+        const selectedRegion = pill.getAttribute('data-region');
+
+        matrixCells.forEach(cell => {
+          const cellRegion = cell.getAttribute('data-region');
+          if (selectedRegion === 'all' || cellRegion === selectedRegion) {
+            cell.classList.remove('hidden');
+          } else {
+            cell.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
   // --- Brochure Form Submission ---
   if (brochureForm) {
     brochureForm.addEventListener('submit', (e) => {

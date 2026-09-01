@@ -1789,3 +1789,255 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   Partner Institutions Page Specific Styles
+   ========================================================================== */
+.partners-stats-strip {
+  background-color: var(--color-bg-cream);
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.partners-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.p-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.p-stat-num {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+
+.p-stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4b5568;
+  line-height: 1.4;
+}
+
+/* World Map Section */
+.partners-map-section {
+  background-color: #faf7f2;
+  padding: 3rem 0 1.5rem;
+}
+
+.map-wrapper-frame {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(18, 24, 45, 0.08);
+  background: #0f162e;
+}
+
+.partners-world-map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Matrix Directory & Filter Section */
+.partners-matrix-section {
+  padding: 2rem 0 6rem;
+  background-color: #faf7f2;
+}
+
+.partners-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+}
+
+.region-pill-btn {
+  background-color: #ffffff;
+  border: 1px solid #dfd6c7;
+  color: #4b5568;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.region-pill-btn:hover {
+  background-color: #f5eee2;
+  color: var(--color-navy-dark);
+}
+
+.region-pill-btn.active {
+  background-color: var(--color-navy-hero);
+  color: #ffffff;
+  border-color: var(--color-navy-hero);
+}
+
+/* 4-Column Table Matrix Grid */
+.partners-table-matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #dfd6c7;
+  border-left: 1px solid #dfd6c7;
+  background-color: #ffffff;
+  margin-bottom: 4.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+}
+
+.matrix-cell {
+  padding: 1.5rem 1.35rem;
+  border-right: 1px solid #dfd6c7;
+  border-bottom: 1px solid #dfd6c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 95px;
+  transition: background-color 0.2s ease;
+}
+
+.matrix-cell:hover {
+  background-color: #fffcf8;
+}
+
+.matrix-cell.hidden {
+  display: none;
+}
+
+.cell-country {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.45rem;
+  font-family: var(--font-sans);
+}
+
+.cell-university {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  line-height: 1.32;
+}
+
+/* Partnership Cooperation Modes */
+.partnership-modes-section {
+  padding: 3rem 0 4rem;
+  border-top: 1px solid var(--border-light);
+  margin-top: 2rem;
+}
+
+.cooperation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cooperation-card {
+  background-color: #ffffff;
+  border: 1px solid #e8e0d3;
+  border-radius: 8px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.coop-num {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  margin-bottom: 0.65rem;
+}
+
+.coop-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.65rem;
+  line-height: 1.3;
+}
+
+.coop-desc {
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+/* Become a Partner CTA Card */
+.become-partner-card {
+  background: linear-gradient(135deg, #161e3d 0%, #0e1426 100%);
+  border-radius: 8px;
+  padding: 3.5rem 3rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  box-shadow: 0 8px 32px rgba(18, 24, 45, 0.12);
+}
+
+.card-inner-tag {
+  color: var(--color-gold-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.become-partner-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+}
+
+.become-partner-desc {
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 820px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.become-partner-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .partners-stats-grid,
+  .cooperation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners-table-matrix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .partners-stats-grid,
+  .cooperation-grid,
+  .partners-table-matrix {
+    grid-template-columns: 1fr;
+  }
+  
+  .become-partner-card {
+    padding: 2.5rem 1.75rem;
+  }
+}
