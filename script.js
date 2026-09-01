@@ -228,9 +228,13 @@ document.addEventListener('DOMContentLoaded', () => {
     '.c-photo-item img',
     '.c-photo-large img',
     '.tradition-photo-card img',
+    '.place-img-box img',
+    '.exp-img-box img',
     '.facility-img',
     '.culture-img',
     '.tradition-img',
+    '.place-img',
+    '.exp-img',
     '.about-img'
   ];
 
@@ -242,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Also enable clicking the parent card wrapper
-  document.querySelectorAll('.facility-photo-box, .c-photo-item, .c-photo-large, .tradition-photo-card').forEach(card => {
+  document.querySelectorAll('.facility-photo-box, .c-photo-item, .c-photo-large, .tradition-photo-card, .place-img-box, .exp-img-box').forEach(card => {
     card.addEventListener('click', (e) => {
       const img = card.querySelector('img');
       if (img && e.target !== img) {

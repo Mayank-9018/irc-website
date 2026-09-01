@@ -2836,3 +2836,428 @@ ul {
     right: 0;
   }
 }
+
+/* ==========================================================================
+   Know Mumbai Page Specific Styles
+   ========================================================================== */
+
+/* Mumbai Stats Ribbon */
+.mumbai-stats-ribbon {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  padding: 2.25rem 0;
+}
+
+.mumbai-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.m-stat-card {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid var(--color-terracotta);
+  padding-left: 1.25rem;
+}
+
+.m-stat-val {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+
+.m-stat-label {
+  font-size: 0.82rem;
+  color: #5a667d;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* About Mumbai Section */
+.about-mumbai-section {
+  padding: 5.5rem 0;
+  background-color: #faf7f2;
+}
+
+.about-mumbai-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-mumbai-title {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  margin-bottom: 1.5rem;
+}
+
+.about-mumbai-text p {
+  font-size: 0.94rem;
+  color: #4b5568;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.about-mumbai-text .lead-para {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2b334d;
+  line-height: 1.65;
+}
+
+.about-mumbai-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mumbai-pillar-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.4rem 1.35rem;
+  display: flex;
+  gap: 1.15rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02);
+  transition: transform 0.25s ease;
+}
+
+.mumbai-pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.pillar-icon-badge {
+  font-size: 1.6rem;
+  background-color: #f7f3eb;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pillar-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.35rem;
+}
+
+.pillar-text {
+  font-size: 0.86rem;
+  color: #5a667d;
+  line-height: 1.5;
+}
+
+/* Must-Visit Places Section */
+.must-visit-section {
+  padding: 5.5rem 0;
+  background-color: #ffffff;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.75rem;
+}
+
+.place-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.07);
+}
+
+.place-img-box {
+  position: relative;
+  height: 210px;
+  background-color: #ede7dc;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.place-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.place-card:hover .place-img {
+  transform: scale(1.05);
+}
+
+.place-cat-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(22, 30, 61, 0.88);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.02em;
+}
+
+.place-card-body {
+  padding: 1.65rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.place-title {
+  font-family: var(--font-serif);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.65rem;
+  line-height: 1.35;
+}
+
+.place-desc {
+  font-size: 0.88rem;
+  color: #4b5568;
+  line-height: 1.58;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.place-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border-top: 1px solid var(--border-light);
+  padding-top: 0.85rem;
+  font-size: 0.78rem;
+  color: #647087;
+  font-weight: 500;
+}
+
+/* What to Do / Experiences Section */
+.what-to-do-section {
+  padding: 5.5rem 0;
+  background-color: #faf7f2;
+  border-top: 1px solid var(--border-light);
+}
+
+.experiences-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.75rem;
+}
+
+.exp-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.07);
+}
+
+.exp-img-box {
+  position: relative;
+  height: 200px;
+  background-color: #ede7dc;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.exp-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.exp-card:hover .exp-img {
+  transform: scale(1.05);
+}
+
+.exp-number-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, var(--color-terracotta) 0%, #d48332 100%);
+  color: #ffffff;
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.exp-card-body {
+  padding: 1.65rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.exp-title {
+  font-family: var(--font-serif);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.65rem;
+  line-height: 1.35;
+}
+
+.exp-desc {
+  font-size: 0.89rem;
+  color: #4b5568;
+  line-height: 1.62;
+  margin-bottom: 1.4rem;
+  flex: 1;
+}
+
+.exp-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.exp-tag-list span {
+  background-color: #f7f3eb;
+  border: 1px solid #e2dacd;
+  color: var(--color-navy-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* Survival Guide Card */
+.mumbai-survival-guide-section {
+  padding: 5rem 0 6.5rem;
+  background-color: #ffffff;
+}
+
+.survival-guide-card {
+  background: linear-gradient(135deg, #1b2346 0%, #293466 100%);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 3.5rem 3rem;
+  box-shadow: 0 8px 30px rgba(22, 30, 61, 0.16);
+}
+
+.survival-header {
+  max-width: 800px;
+  margin-bottom: 2.75rem;
+}
+
+.survival-header .detail-card-badge {
+  color: #e59d48;
+}
+
+.survival-title {
+  font-family: var(--font-serif);
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0.4rem 0 0.65rem;
+}
+
+.survival-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.survival-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.tip-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 1.75rem 1.5rem;
+}
+
+.tip-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.65rem;
+}
+
+.tip-text {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+}
+
+.tip-text strong {
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .mumbai-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-mumbai-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .places-grid,
+  .experiences-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .survival-tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .mumbai-stats-grid,
+  .places-grid,
+  .experiences-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .survival-guide-card {
+    padding: 2.5rem 1.5rem;
+  }
+}
