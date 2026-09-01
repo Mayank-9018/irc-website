@@ -177,4 +177,94 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // --- Global Image Lightbox Modal (Expandable on Click) ---
+  let lightboxModal = document.getElementById('imageLightbox');
+
+  if (!lightboxModal) {
+    lightboxModal = document.createElement('div');
+    lightboxModal.id = 'imageLightbox';
+    lightboxModal.className = 'lightbox-modal';
+    lightboxModal.innerHTML = `
+      <div class="lightbox-wrapper">
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close image">&times;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    `;
+    document.body.appendChild(lightboxModal);
+  }
+
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+
+  function openLightbox(src, alt) {
+    if (lightboxImg && lightboxModal) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || 'Expanded View';
+      if (lightboxCaption) {
+        lightboxCaption.textContent = alt || '';
+        lightboxCaption.style.display = alt ? 'block' : 'none';
+      }
+      lightboxModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeLightbox() {
+    if (lightboxModal) {
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        if (lightboxImg) lightboxImg.src = '';
+      }, 300);
+    }
+  }
+
+  // Attach click listener to all gallery & photo cards across the website
+  const expandableSelectors = [
+    '.facility-photo-box img',
+    '.c-photo-item img',
+    '.c-photo-large img',
+    '.tradition-photo-card img',
+    '.facility-img',
+    '.culture-img',
+    '.tradition-img',
+    '.about-img'
+  ];
+
+  document.querySelectorAll(expandableSelectors.join(', ')).forEach(img => {
+    img.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openLightbox(img.currentSrc || img.src, img.alt);
+    });
+  });
+
+  // Also enable clicking the parent card wrapper
+  document.querySelectorAll('.facility-photo-box, .c-photo-item, .c-photo-large, .tradition-photo-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      const img = card.querySelector('img');
+      if (img && e.target !== img) {
+        openLightbox(img.currentSrc || img.src, img.alt);
+      }
+    });
+  });
+
+  if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+
+  if (lightboxModal) {
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-wrapper')) {
+        closeLightbox();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
 });
+
