@@ -7,14 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-  
-  const brochureModal = document.getElementById('brochureModal');
-  const closeModalBtn = document.getElementById('closeModalBtn');
-  const heroBrochureBtn = document.getElementById('heroBrochureBtn');
-  const navBrochureBtn = document.getElementById('navBrochureBtn');
-  const mobileBrochureBtn = document.getElementById('mobileBrochureBtn');
-  const brochureForm = document.getElementById('brochureForm');
-  const modalSuccessMsg = document.getElementById('modalSuccessMsg');
 
   // --- Mobile Drawer Toggle ---
   if (mobileMenuBtn && mobileDrawer) {
@@ -30,62 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // --- Modal Open / Close Logic ---
-  function openModal(e) {
-    if (e) e.preventDefault();
-    if (brochureModal) {
-      brochureModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-      if (modalSuccessMsg) modalSuccessMsg.style.display = 'none';
-      if (brochureForm) brochureForm.style.display = 'block';
-    }
-  }
-
-  function closeModal() {
-    if (brochureModal) {
-      brochureModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  }
-
-  if (heroBrochureBtn) heroBrochureBtn.addEventListener('click', openModal);
-  if (navBrochureBtn) navBrochureBtn.addEventListener('click', openModal);
-  if (mobileBrochureBtn) mobileBrochureBtn.addEventListener('click', openModal);
-  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
-
-  // Universal open brochure modal class trigger
-  const genericBrochureBtns = document.querySelectorAll('.open-brochure-modal');
-  genericBrochureBtns.forEach(btn => {
-    btn.addEventListener('click', openModal);
-  });
-
-  const viewOnlineBtn = document.getElementById('viewOnlineBtn');
-  if (viewOnlineBtn) {
-    viewOnlineBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const onlineViewerSection = document.getElementById('onlineViewerSection');
-      if (onlineViewerSection) {
-        onlineViewerSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
-
-  // Close modal on outside click
-  if (brochureModal) {
-    brochureModal.addEventListener('click', (e) => {
-      if (e.target === brochureModal) {
-        closeModal();
-      }
-    });
-  }
-
-  // Escape key to close modal
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && brochureModal && brochureModal.classList.contains('active')) {
-      closeModal();
-    }
-  });
 
   // --- Programmes Filter Functionality ---
   const filterTabs = document.querySelectorAll('.filter-tab');
@@ -132,30 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       });
-    });
-  }
-
-  // --- Brochure Form Submission ---
-  if (brochureForm) {
-    brochureForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = brochureForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Generating PDF...';
-      submitBtn.disabled = true;
-
-      setTimeout(() => {
-        brochureForm.style.display = 'none';
-        if (modalSuccessMsg) modalSuccessMsg.style.display = 'block';
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        brochureForm.reset();
-
-        // Automatically close after 3 seconds
-        setTimeout(() => {
-          closeModal();
-        }, 3000);
-      }, 900);
     });
   }
 

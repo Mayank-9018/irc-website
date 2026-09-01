@@ -3588,3 +3588,419 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   Contact Page Specific Styles (Matching Exact Screenshot media_1788282498356)
+   ========================================================================== */
+
+.contact-page-body {
+  background-color: #fbf9f5;
+}
+
+.contact-showcase-main {
+  padding: 3.5rem 0 6rem;
+}
+
+.contact-page-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section Tags & Headings */
+.irc-sec-tag {
+  color: #b35338;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.irc-sec-heading {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.25rem;
+}
+
+/* Top Block: Faculty Cards Row */
+.faculty-cards-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.faculty-compact-card {
+  background: #ffffff;
+  border: 1px solid #e8e2d8;
+  border-radius: 10px;
+  padding: 1.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faculty-compact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.faculty-avatar-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ede8df;
+  flex-shrink: 0;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.faculty-text-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.faculty-display-name {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.faculty-display-role {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #b35338;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.35;
+}
+
+/* Faculty Action Links */
+.faculty-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.f-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4b5563;
+  background-color: #f6f2ea;
+  border: 1px solid #e5ded2;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.f-link-btn:hover {
+  background-color: #b35338;
+  border-color: #b35338;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.f-linkedin-btn:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+  color: #ffffff;
+}
+
+.f-email-btn:hover {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.f-icon {
+  flex-shrink: 0;
+}
+
+/* Student Committee Section */
+.student-committee-block {
+  margin-top: 4.25rem;
+}
+
+.student-sec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.student-sec-hint {
+  font-size: 0.8rem;
+  color: #8c857b;
+  font-weight: 500;
+}
+
+.student-circles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.25rem 1.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.student-circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.student-avatar-wrap {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ede8df;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-bottom: 0.85rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.student-avatar-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.student-circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover overlay on student portraits */
+.avatar-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 119, 181, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: 50%;
+}
+
+.student-avatar-wrap:hover .avatar-hover-overlay {
+  opacity: 1;
+}
+
+.overlay-in-icon {
+  transform: scale(0.85);
+  transition: transform 0.2s ease;
+}
+
+.student-avatar-wrap:hover .overlay-in-icon {
+  transform: scale(1.1);
+}
+
+.student-circle-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #23272f;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.student-circle-name:hover {
+  color: #b35338;
+  text-decoration: underline;
+}
+
+/* PGPEx Subtitle Badge */
+.pgpex-subtitle-badge {
+  display: inline-block;
+  background-color: #fcf1ed;
+  color: #b35338;
+  border: 1px solid #fed7aa;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-top: 0.35rem;
+}
+
+/* Contact & Location Section */
+.contact-location-block {
+  margin-top: 4.5rem;
+}
+
+.contact-location-split-box {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  border: 1px solid #e4ddd2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  margin-top: 1.25rem;
+}
+
+.contact-details-col {
+  padding: 2.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.c-meta-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #8c857b;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.c-meta-val-link {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.c-meta-val-link:hover {
+  color: #b35338;
+  text-decoration: underline;
+}
+
+.c-meta-val-text {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.contact-map-pane {
+  background-color: #faf6ee;
+  border-left: 1px solid #e4ddd2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 19px, #ede4d5 19px, #ede4d5 20px);
+  cursor: pointer;
+}
+
+.map-parchment-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.map-pin-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.55rem 1.15rem;
+  border-radius: 30px;
+  border: 1px solid #e5ded3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.contact-map-pane:hover .map-pin-indicator {
+  transform: scale(1.04);
+}
+
+.map-red-pin {
+  font-size: 1.15rem;
+}
+
+.map-pin-text {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.map-expand-anchor {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .student-circles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5rem;
+  }
+
+  .faculty-cards-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-location-split-box {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map-pane {
+    border-left: none;
+    border-top: 1px solid #e4ddd2;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .irc-sec-heading {
+    font-size: 2rem;
+  }
+
+  .student-circles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  .student-avatar-wrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-details-col {
+    padding: 2rem 1.5rem;
+  }
+}

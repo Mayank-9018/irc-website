@@ -38,10 +38,8 @@
           <li class="nav-item"><a href="partners.html" class="nav-link">Partners</a></li>
           <li class="nav-item"><a href="campus-life.html" class="nav-link">Campus Life</a></li>
           <li class="nav-item"><a href="know-mumbai.html" class="nav-link">Know Mumbai</a></li>
-          <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="index.html#metrics" class="nav-link">Rankings</a></li>
           <li class="nav-item"><a href="brochure.html" class="nav-link active">Brochure</a></li>
-          <li class="nav-item"><a href="#connect-section" class="nav-link">Connect</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -62,10 +60,8 @@
         <li><a href="partners.html" class="mobile-nav-link">Partners</a></li>
         <li><a href="campus-life.html" class="mobile-nav-link">Campus Life</a></li>
         <li><a href="know-mumbai.html" class="mobile-nav-link">Know Mumbai</a></li>
-        <li><a href="index.html#about" class="mobile-nav-link">About</a></li>
-        <li><a href="index.html#metrics" class="mobile-nav-link">Rankings</a></li>
         <li><a href="brochure.html" class="mobile-nav-link active">Brochure</a></li>
-        <li><a href="#connect-section" class="mobile-nav-link">Connect</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -95,9 +91,9 @@
 
           <!-- Action Buttons -->
           <div class="brochure-btn-group">
-            <button class="btn btn-primary open-brochure-modal" id="downloadBrochureBtn">
+            <a href="https://nitieedu-my.sharepoint.com/:b:/g/personal/internationalrelations_iimmumbai_ac_in/IQDF33suX392QpK9QjQ8LQerAWAHdRNcEIx65ruJ6snGXPY?e=qvJQKj" target="_blank" download class="btn btn-primary" id="downloadBrochureBtn">
               Download Brochure (PDF)
-            </button>
+            </a>
           </div>
 
           <div class="brochure-divider"></div>
@@ -107,6 +103,11 @@
             <div class="b-meta-item">
               <span class="b-meta-val">2026–27</span>
               <span class="b-meta-label">Edition</span>
+            </div>
+
+            <div class="b-meta-item">
+              <span class="b-meta-val">12 pages</span>
+              <span class="b-meta-label">Length</span>
             </div>
 
             <div class="b-meta-item">
@@ -159,37 +160,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Interactive Brochure Modal -->
-  <div class="modal-backdrop" id="brochureModal">
-    <div class="modal-card">
-      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
-      <div class="modal-header">
-        <div class="modal-badge">Official Document</div>
-        <h3 class="modal-title">Download International Relations Brochure 2026–27</h3>
-        <p class="modal-subtitle">Get instant access to the complete 12-page PDF overview covering programmes, partner
-          networks, housing, and course syllabi.</p>
-      </div>
-      <form class="modal-form" id="brochureForm">
-        <div class="form-group">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" placeholder="e.g. Maya Chen" required>
-        </div>
-        <div class="form-group">
-          <label for="institution">Home University / Organization</label>
-          <input type="text" id="institution" placeholder="e.g. Emlyon Business School" required>
-        </div>
-        <div class="form-group">
-          <label for="emailAddress">Email Address</label>
-          <input type="email" id="emailAddress" placeholder="e.g. m.chen@student.em-lyon.com" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Download Brochure (PDF)</button>
-      </form>
-      <div class="modal-success-msg" id="modalSuccessMsg">
-        🎉 Thank you! The IIM Mumbai 2026–27 International Relations Brochure download has started.
-      </div>
-    </div>
-  </div>
 
   <!-- Scripts -->
   <script src="script.js"></script>
