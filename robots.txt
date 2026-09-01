@@ -1,0 +1,8 @@
+# robots.txt for IIM Mumbai International Relations Website
+# https://iimmumbai.ac.in/irc/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://iimmumbai.ac.in/irc/sitemap.xml
