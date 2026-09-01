@@ -60,6 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', openModal);
   });
 
+  const viewOnlineBtn = document.getElementById('viewOnlineBtn');
+  if (viewOnlineBtn) {
+    viewOnlineBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const onlineViewerSection = document.getElementById('onlineViewerSection');
+      if (onlineViewerSection) {
+        onlineViewerSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
   // Close modal on outside click
   if (brochureModal) {
     brochureModal.addEventListener('click', (e) => {
