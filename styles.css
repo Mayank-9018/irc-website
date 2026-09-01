@@ -1914,6 +1914,16 @@ ul {
   display: none;
 }
 
+.matrix-cell.matrix-cell-empty {
+  background-color: #dfd7c8;
+  border-right: 1px solid #dfd6c7;
+  border-bottom: 1px solid #dfd6c7;
+}
+
+.matrix-cell.matrix-cell-empty:hover {
+  background-color: #dfd7c8;
+}
+
 .cell-country {
   font-size: 0.72rem;
   font-weight: 700;
