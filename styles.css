@@ -2066,3 +2066,445 @@ ul {
     padding: 2.5rem 1.75rem;
   }
 }
+
+/* ==========================================================================
+   Campus Life Page Specific Styles
+   ========================================================================== */
+
+/* Placeholder styling for images to be populated by user */
+.placeholder-img {
+  background-color: #ede7dc;
+  min-height: 140px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* Vlogs Showcase Banner */
+.campus-vlogs-section {
+  padding: 3.5rem 0 2rem;
+  background-color: #faf7f2;
+}
+
+.vlogs-banner-card {
+  background-color: #e5e0f0;
+  border-radius: 12px;
+  padding: 3rem 2.75rem;
+  box-shadow: 0 4px 20px rgba(75, 60, 115, 0.06);
+}
+
+.vlogs-header {
+  max-width: 860px;
+  margin-bottom: 2rem;
+}
+
+.vlogs-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b3a6d;
+  margin-bottom: 0.75rem;
+}
+
+.vlogs-subtitle {
+  font-size: 0.95rem;
+  color: #4a4870;
+  line-height: 1.6;
+}
+
+.vlogs-media-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.vlog-media-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #d6cee8;
+  display: flex;
+  flex-direction: column;
+}
+
+.vlog-media-item.item-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: transparent;
+}
+
+.sub-media-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #d6cee8;
+  flex: 1;
+}
+
+.vlog-thumb-img {
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.sub-media-card .vlog-thumb-img {
+  min-height: 90px;
+}
+
+.media-overlay-tag {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: rgba(22, 30, 61, 0.82);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+/* Facilities Section */
+.campus-facilities-section {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.section-title-large {
+  font-family: var(--font-serif);
+  font-size: 2.35rem;
+  font-weight: 700;
+  color: #3b3a6d;
+  margin-bottom: 2.75rem;
+}
+
+.facilities-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.facility-item-block {
+  margin-bottom: 2rem;
+}
+
+.facility-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #3b3a6d;
+  margin-bottom: 0.65rem;
+}
+
+.facility-item-text {
+  font-size: 0.92rem;
+  color: #4b5568;
+  line-height: 1.62;
+  margin-bottom: 0.65rem;
+}
+
+.facility-bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.facility-bullet-list li {
+  font-size: 0.9rem;
+  color: #4b5568;
+  line-height: 1.55;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.facility-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-terracotta);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.library-hours-box {
+  background-color: #faf7f2;
+  border: 1px solid var(--border-card);
+  border-radius: 6px;
+  padding: 1.25rem 1.35rem;
+  margin-top: 1rem;
+}
+
+.hours-label {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--color-navy-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: #4b5568;
+}
+
+.hours-list span {
+  color: #647087;
+}
+
+.facilities-photos-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.facility-photo-box {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ede7dc;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.facility-photo-box.full-span {
+  grid-column: span 2;
+}
+
+.facility-photo-box.large-box {
+  margin-top: 2rem;
+  min-height: 220px;
+}
+
+.facility-img {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.facility-photo-box.large-box .facility-img {
+  min-height: 240px;
+}
+
+/* Food & Accommodation Section */
+.food-accommodation-section {
+  padding: 5rem 0;
+  background-color: #faf7f2;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.food-accom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.life-detail-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 2.75rem 2.25rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+}
+
+.detail-card-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.45rem;
+}
+
+.life-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #3b3a6d;
+  margin-bottom: 1.15rem;
+}
+
+.life-card-desc {
+  font-size: 0.92rem;
+  color: #4b5568;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.meal-plan-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.m-tag {
+  background-color: #f7f3eb;
+  border: 1px solid #dfd7c8;
+  color: var(--color-navy-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+}
+
+.accom-bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accom-bullet-list li {
+  font-size: 0.9rem;
+  color: #4b5568;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.accom-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-terracotta);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* Culture & Festivals Section */
+.campus-culture-section {
+  padding: 5.5rem 0 6.5rem;
+  background-color: #ffffff;
+}
+
+.culture-split-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.culture-main-title {
+  font-family: var(--font-serif);
+  font-size: 2.35rem;
+  font-weight: 700;
+  color: #3b3a6d;
+  margin-bottom: 1.75rem;
+}
+
+.culture-pillars-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.c-pillar-box {
+  background: #3b3a6d;
+  color: #ffffff;
+  padding: 1.25rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.c-pillar-box:nth-child(3) {
+  grid-column: span 3;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.c-pillar-icon {
+  font-size: 1.5rem;
+}
+
+.c-pillar-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.culture-narrative p {
+  font-size: 0.94rem;
+  color: #4b5568;
+  line-height: 1.68;
+  margin-bottom: 1.25rem;
+}
+
+.culture-photo-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.c-photo-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ede7dc;
+}
+
+.culture-photos-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.c-photo-large {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ede7dc;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.culture-img {
+  width: 100%;
+  height: auto;
+  min-height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .vlogs-media-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .facilities-layout-grid,
+  .food-accom-grid,
+  .culture-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .vlogs-media-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .culture-pillars-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .c-pillar-box:nth-child(3) {
+    grid-column: span 1;
+  }
+}

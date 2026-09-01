@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Life | IIM Mumbai</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo-invert-trimmed.png" alt="IIM Mumbai Logo" class="header-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="programmes.html" class="nav-link">Programmes</a></li>
+          <li class="nav-item"><a href="exchange.html" class="nav-link">Exchange</a></li>
+          <li class="nav-item"><a href="partners.html" class="nav-link">Partners</a></li>
+          <li class="nav-item"><a href="campus-life.html" class="nav-link active">Campus Life</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="index.html#metrics" class="nav-link">Rankings</a></li>
+          <li class="nav-item"><a href="#brochure" class="nav-link" id="navBrochureBtn">Brochure</a></li>
+          <li class="nav-item"><a href="#connect-section" class="nav-link">Connect</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="programmes.html" class="mobile-nav-link">Programmes</a></li>
+        <li><a href="exchange.html" class="mobile-nav-link">Exchange</a></li>
+        <li><a href="partners.html" class="mobile-nav-link">Partners</a></li>
+        <li><a href="campus-life.html" class="mobile-nav-link active">Campus Life</a></li>
+        <li><a href="index.html#about" class="mobile-nav-link">About</a></li>
+        <li><a href="index.html#metrics" class="mobile-nav-link">Rankings</a></li>
+        <li><a href="#brochure" class="mobile-nav-link" id="mobileBrochureBtn">Brochure</a></li>
+        <li><a href="#connect-section" class="mobile-nav-link">Connect</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <div class="breadcrumb-trail">
+        <a href="index.html">Home</a> <span>/</span> <span class="current">Campus Life</span>
+      </div>
+      <div class="page-hero-tag">STUDENT EXPERIENCE & RESIDENTIAL LIFE</div>
+      <h1 class="page-hero-title">Campus Life at IIM Mumbai</h1>
+      <p class="page-hero-desc">
+        Nestled between Powai and Vihar lakes in Mumbai, our lush green 63-acre residential campus offers a vibrant community blending academic rigor, state-of-the-art sports facilities, rich cultural celebrations, and an inclusive global environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Student / Alumni Vlogs Showcase Section -->
+  <section class="campus-vlogs-section">
+    <div class="container">
+      <div class="vlogs-banner-card">
+        <div class="vlogs-header">
+          <h2 class="vlogs-title">Campus Life at IIM Mumbai</h2>
+          <p class="vlogs-subtitle">
+            Here are a few student/alumni vlogs that give a glimpse into our vibrant campus life at IIM Mumbai, capturing everything from academic experiences to extracurricular activities and daily interactions.
+          </p>
+        </div>
+
+        <!-- Vlogs / Gallery Thumbnails Row (Replace src with your images/videos) -->
+        <div class="vlogs-media-grid">
+          <div class="vlog-media-item item-large">
+            <!-- Placeholder for Campus Tour Thumbnail -->
+            <img src="assets/campus/vlog-tour.jpg" alt="IIM Mumbai Campus Tour" class="vlog-thumb-img placeholder-img">
+            <div class="media-overlay-tag">Campus Tour 2026</div>
+          </div>
+
+          <div class="vlog-media-item item-stacked">
+            <div class="sub-media-card">
+              <!-- Placeholder for Day 0 Orientation -->
+              <img src="assets/campus/vlog-day0.jpg" alt="Day 0 Orientation" class="vlog-thumb-img placeholder-img">
+              <div class="media-overlay-tag">Day 0</div>
+            </div>
+            <div class="sub-media-card">
+              <!-- Placeholder for Campus Engagement -->
+              <img src="assets/campus/vlog-trees.jpg" alt="Campus Life Vibes" class="vlog-thumb-img placeholder-img">
+              <div class="media-overlay-tag">100 Days</div>
+            </div>
+          </div>
+
+          <div class="vlog-media-item item-portrait">
+            <!-- Placeholder for Day 20 Business Conclave -->
+            <img src="assets/campus/vlog-day20.jpg" alt="Day 20 Business Conclave" class="vlog-thumb-img placeholder-img">
+            <div class="media-overlay-tag">Day 20 • Conclave</div>
+          </div>
+
+          <div class="vlog-media-item item-portrait">
+            <!-- Placeholder for Traditional Day / Ethnic Celebration -->
+            <img src="assets/campus/vlog-ethnic.jpg" alt="Traditional Day Celebration" class="vlog-thumb-img placeholder-img">
+            <div class="media-overlay-tag">Ethnic Day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Facilities Section -->
+  <section class="campus-facilities-section" id="facilities">
+    <div class="container">
+      <div class="section-tag">INFRASTRUCTURE & AMENITIES</div>
+      <h2 class="section-title-large">Campus Facilities</h2>
+
+      <div class="facilities-layout-grid">
+        <!-- Left Column: Facilities List -->
+        <div class="facilities-col-left">
+          
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Sports & Fitness Centre</h3>
+            <p class="facility-item-text">
+              IIM Mumbai campus houses several sports and fitness facilities including cricket, football ground, tennis court, open gym, basketball court, badminton courts, and a volleyball court. In addition, the campus also has numerous indoor sports and games facilities such as Table Tennis, Billiards, and Carom.
+            </p>
+            <p class="facility-item-text">
+              Fitness Centre (Gym) facility is also available on campus.
+            </p>
+          </div>
+
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Health Centre</h3>
+            <p class="facility-item-text">
+              Student well-being is a top priority.
+            </p>
+            <p class="facility-item-text">
+              Our on-campus dispensary operates <strong>24/7</strong>, supported by a dedicated emergency ambulance service available around the clock.
+            </p>
+          </div>
+
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Hostel Block</h3>
+            <p class="facility-item-text">
+              The campus features three modern hostel blocks—including one of the region's tallest residential towers and a dedicated Management Development Program (MDP) building for executive stays.
+            </p>
+          </div>
+
+          <!-- Facilities Photo Mosaic Left -->
+          <div class="facilities-photos-mosaic">
+            <div class="facility-photo-box">
+              <!-- Placeholder for Hostel Tower -->
+              <img src="assets/campus/hostel-tower.jpg" alt="Hostel Residential Tower" class="facility-img placeholder-img">
+            </div>
+            <div class="facility-photo-box">
+              <!-- Placeholder for Study Space / Library Hall -->
+              <img src="assets/campus/library-hall.jpg" alt="Modern Study Hall" class="facility-img placeholder-img">
+            </div>
+            <div class="facility-photo-box full-span">
+              <!-- Placeholder for Campus Central Pond View -->
+              <img src="assets/campus/campus-pond.jpg" alt="Scenic Central Pond" class="facility-img placeholder-img">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Facilities List -->
+        <div class="facilities-col-right">
+
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Pond</h3>
+            <p class="facility-item-text">
+              Walking and jogging trails surround a peaceful pond nestled right at the heart of the campus.
+            </p>
+          </div>
+
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Banking & ATMs</h3>
+            <p class="facility-item-text">
+              The campus features an on-site bank branch and two ATMs that accept all major international debit and credit cards.
+            </p>
+          </div>
+
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Library</h3>
+            <p class="facility-item-text">
+              Our fully equipped library offers extensive access to leading academic journals, databases, subscriptions, and case studies.
+            </p>
+            <div class="library-hours-box">
+              <strong class="hours-label">Hours of Operation:</strong>
+              <ul class="hours-list">
+                <li><span>Monday – Friday:</span> <strong>9:00 AM – 12:00 AM (Midnight)</strong></li>
+                <li><span>Saturday & Sunday:</span> <strong>11:00 AM – 12:00 AM (Midnight)</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="facility-item-block">
+            <h3 class="facility-item-title">Internet Facilities</h3>
+            <ul class="facility-bullet-list">
+              <li>Students are required to bring their own laptops.</li>
+              <li>Upon enrollment, each student receives an official university email account.</li>
+              <li>The campus is fully equipped with high-speed Wi-Fi, alongside dedicated LAN connectivity in all hostel rooms.</li>
+            </ul>
+          </div>
+
+          <!-- Facilities Photo Mosaic Right -->
+          <div class="facility-photo-box large-box">
+            <!-- Placeholder for Library Study Carrels / Computer Lab -->
+            <img src="assets/campus/computer-lab.jpg" alt="Library Computer Cubicles" class="facility-img placeholder-img">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food & Accommodation Section -->
+  <section class="food-accommodation-section" id="living">
+    <div class="container">
+      <div class="food-accom-grid">
+
+        <!-- Food Card -->
+        <div class="life-detail-card">
+          <div class="detail-card-badge">DINING SERVICES</div>
+          <h2 class="life-card-title">Food</h2>
+          <p class="life-card-desc">
+            Students can have their meals in the mess or at various eateries in the campus on a direct payment basis. Mess is managed by the student community, and provides four meals per day in both Indian vegetarian and non-vegetarian cuisine.
+          </p>
+          <div class="meal-plan-tags">
+            <span class="m-tag">Breakfast</span>
+            <span class="m-tag">Lunch</span>
+            <span class="m-tag">Evening Snacks</span>
+            <span class="m-tag">Dinner</span>
+          </div>
+        </div>
+
+        <!-- Accommodation Card -->
+        <div class="life-detail-card">
+          <div class="detail-card-badge">HOUSING & RESIDENCES</div>
+          <h2 class="life-card-title">Accommodation</h2>
+          <ul class="accom-bullet-list">
+            <li>
+              <strong>On-Campus Residence:</strong> All Exchange students will be provided <strong>on-campus accommodation</strong>.
+            </li>
+            <li>
+              <strong>Living Charges:</strong> The accommodation charges for 2026-27 are <strong>Rupees 45,000 per month</strong> for sharing accommodation at student's hostel. These charges are per student and should be paid before coming to IIM Mumbai within beginning & before 5 days of each month.
+            </li>
+            <li>
+              <strong>Campus Guidelines:</strong> The exchange students are expected to adhere to the general rules applicable for staying on campus.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture & Campus Traditions Section -->
+  <section class="campus-culture-section" id="culture">
+    <div class="container">
+      <div class="culture-split-grid">
+
+        <!-- Left: Culture Info & Pillars -->
+        <div class="culture-info-side">
+          <div class="section-tag">COMMUNITY & FESTIVALS</div>
+          <h2 class="culture-main-title">IIM Mumbai’s Culture</h2>
+
+          <!-- 3 Culture Badges -->
+          <div class="culture-pillars-strip">
+            <div class="c-pillar-box">
+              <div class="c-pillar-icon">👥</div>
+              <span class="c-pillar-name">Diversity</span>
+            </div>
+            <div class="c-pillar-box">
+              <div class="c-pillar-icon">🪷</div>
+              <span class="c-pillar-name">Culture</span>
+            </div>
+            <div class="c-pillar-box">
+              <div class="c-pillar-icon">♾️</div>
+              <span class="c-pillar-name">Endless Opportunities</span>
+            </div>
+          </div>
+
+          <div class="culture-narrative">
+            <p>
+              At IIM Mumbai, we take pride in our vibrant and diverse culture, celebrating traditional festivals like <strong>Ganesh Chaturthi, Diwali, Holi, Navratri & Dandiya Night, Pongal, Sankranti</strong>, and <strong>Shiv Jayanti</strong>.
+            </p>
+            <p>
+              Our campus also comes alive with student-driven events such as <strong>Avartan - Annual Business Fest</strong>, <strong>Josh - Inter B-School Sports Fest</strong>, and <strong>Section Wars</strong>, fostering a dynamic and spirited community.
+            </p>
+          </div>
+
+          <!-- Left Photos -->
+          <div class="culture-photo-stack">
+            <div class="c-photo-item">
+              <!-- Placeholder for Sansmaran Alumni Meet -->
+              <img src="assets/campus/sansmaran.jpg" alt="Sansmaran Annual Alumni Meet" class="culture-img placeholder-img">
+            </div>
+            <div class="c-photo-item">
+              <!-- Placeholder for Avartan Fest -->
+              <img src="assets/campus/avartan.jpg" alt="Avartan Business Fest" class="culture-img placeholder-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Culture Photo Mosaic -->
+        <div class="culture-photos-side">
+          <div class="c-photo-large">
+            <!-- Placeholder for Sports Fest / Josh -->
+            <img src="assets/campus/josh-sports.jpg" alt="Josh Sports Fest" class="culture-img placeholder-img">
+          </div>
+          <div class="c-photo-large">
+            <!-- Placeholder for Concert / Pro-nite -->
+            <img src="assets/campus/concert-pronite.jpg" alt="Campus Concert Pro-Nite" class="culture-img placeholder-img">
+          </div>
+          <div class="c-photo-large">
+            <!-- Placeholder for Holi Celebration -->
+            <img src="assets/campus/holi-celebration.jpg" alt="Holi Festival Celebrations" class="culture-img placeholder-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="connect-section">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span class="institute-name">IIM Mumbai</span>
+            <span class="sub-name">INTERNATIONAL RELATIONS OFFICE</span>
+          </div>
+          <p class="footer-tagline">
+            Fostering global scholastic cooperation, cross-cultural mobility, and management research excellence since 1963.
+          </p>
+          <div class="footer-address">
+            📍 Vihar Lake Road, Powai, Mumbai, Maharashtra 400087, India
+          </div>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p class="contact-item"><strong>Email:</strong> internationalrelations@iimmumbai.ac.in</p>
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-btn">in</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-btn">𝕏</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-btn">ig</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Indian Institute of Management Mumbai. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Exchange</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Brochure Modal -->
+  <div class="modal-backdrop" id="brochureModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge">Official Document</div>
+        <h3 class="modal-title">Download International Relations Brochure & Dossier</h3>
+        <p class="modal-subtitle">Get complete details on student life, on-campus accommodation, meal plans, and exchange term procedures.</p>
+      </div>
+      <form class="modal-form" id="brochureForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="e.g. Maya Chen" required>
+        </div>
+        <div class="form-group">
+          <label for="institution">Home University</label>
+          <input type="text" id="institution" placeholder="e.g. Emlyon Business School" required>
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Email Address</label>
+          <input type="email" id="emailAddress" placeholder="e.g. m.chen@student.em-lyon.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Download Campus Life Guide</button>
+      </form>
+      <div class="modal-success-msg" id="modalSuccessMsg">
+        🎉 Thank you! The Campus Life & Living Guide download has started.
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
