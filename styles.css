@@ -1285,3 +1285,347 @@ ul {
     margin-top: 0.35rem;
   }
 }
+
+/* ==========================================================================
+   Exchange Page Specific Styles
+   ========================================================================== */
+.exchange-pillars-strip {
+  background-color: var(--color-bg-cream);
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.exchange-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pillar-icon {
+  width: 38px;
+  height: 38px;
+  color: var(--color-terracotta);
+  margin-bottom: 0.85rem;
+}
+
+.pillar-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--color-terracotta);
+}
+
+.pillar-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.35rem;
+  line-height: 1.25;
+}
+
+.pillar-desc {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* Exchange Section Blocks */
+.exchange-section-block {
+  padding: 5.5rem 0 4.5rem;
+  background-color: #ffffff;
+}
+
+.exchange-content-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.exchange-content-split.reverse-split {
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.exchange-intro-p {
+  font-size: 1.05rem;
+  color: #2b3345;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.exchange-feature-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+  margin-bottom: 2.5rem;
+}
+
+.f-point {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.f-point-num {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1;
+  padding-top: 0.15rem;
+}
+
+.f-point-content h4 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.3rem;
+}
+
+.f-point-content p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+.exchange-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Sidebar Card */
+.exchange-sidebar-card {
+  background-color: #fcfbf9;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-terracotta);
+  margin-bottom: 0.45rem;
+}
+
+.sidebar-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.factsheet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.factsheet-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.fact-lbl {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7b8699;
+  letter-spacing: 0.04em;
+}
+
+.fact-val {
+  font-size: 0.88rem;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Academic Terms Grid */
+.exchange-terms-section {
+  padding: 5rem 0;
+  background-color: #faf7f2;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.terms-tri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.term-detail-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 2.25rem 1.85rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.term-detail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(18, 24, 45, 0.07);
+}
+
+.term-detail-card.featured-term {
+  border: 2px solid var(--color-terracotta);
+  background: #fffdfb;
+}
+
+.popular-ribbon {
+  position: absolute;
+  top: -12px;
+  right: 1.5rem;
+  background-color: var(--color-terracotta);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.term-tag-top {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-terracotta);
+  margin-bottom: 0.35rem;
+}
+
+.term-name {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.25rem;
+}
+
+.term-date-range {
+  font-size: 0.84rem;
+  color: #717c91;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.term-timeline-box {
+  background-color: #f9f6f0;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.timeline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.t-key {
+  color: #647087;
+  font-weight: 500;
+}
+
+.t-val {
+  color: var(--color-navy-dark);
+  font-weight: 700;
+}
+
+.term-summary-text {
+  font-size: 0.86rem;
+  color: #4a5468;
+  line-height: 1.55;
+}
+
+/* Outbound Section */
+.outbound-section {
+  padding: 5.5rem 0 4.5rem;
+  background-color: #ffffff;
+}
+
+/* FAQ Section */
+.exchange-faq-section {
+  padding: 5rem 0 5.5rem;
+  background-color: #faf7f2;
+  border-top: 1px solid var(--border-light);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.faq-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02);
+}
+
+.faq-q {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-navy-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.faq-a {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .exchange-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .exchange-content-split,
+  .exchange-content-split.reverse-split {
+    grid-template-columns: 1fr;
+  }
+  
+  .terms-tri-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .exchange-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
