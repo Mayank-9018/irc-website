@@ -1924,6 +1924,21 @@ ul {
   background-color: #dfd7c8;
 }
 
+.cell-logo-wrap {
+  margin-bottom: 0.85rem;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.cell-partner-logo {
+  max-height: 45px;
+  max-width: 140px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
 .cell-country {
   font-size: 0.72rem;
   font-weight: 700;
