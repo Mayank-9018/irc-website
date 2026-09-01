@@ -2154,10 +2154,16 @@ ul {
   transition: transform 0.3s ease;
 }
 
+.vlog-media-item.item-large {
+  background-color: #000000;
+  height: 100%;
+}
+
 .vlog-iframe {
   width: 100%;
   height: 100%;
-  min-height: 210px;
+  min-height: 100%;
+  flex: 1;
   border: none;
   display: block;
 }
