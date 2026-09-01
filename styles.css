@@ -2380,27 +2380,29 @@ ul {
   overflow: hidden;
   background-color: #ede7dc;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  height: 180px;
 }
 
 .facility-photo-box.full-span {
   grid-column: span 2;
+  height: 200px;
 }
 
 .facility-photo-box.large-box {
   margin-top: 2rem;
-  min-height: 220px;
+  height: 240px;
 }
 
 .facility-img {
   width: 100%;
   height: 100%;
-  min-height: 140px;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
 }
 
-.facility-photo-box.large-box .facility-img {
-  min-height: 240px;
+.facility-photo-box:hover .facility-img {
+  transform: scale(1.03);
 }
 
 /* Food & Accommodation Section */
@@ -2561,19 +2563,30 @@ ul {
   margin-top: 2rem;
 }
 
-.c-photo-item {
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #ede7dc;
-}
-
 .culture-photos-side {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
+.culture-photo-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.c-photo-item {
+  position: relative;
+  height: 190px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ede7dc;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
 .c-photo-large {
+  position: relative;
+  height: 210px;
   border-radius: 8px;
   overflow: hidden;
   background-color: #ede7dc;
@@ -2582,34 +2595,113 @@ ul {
 
 .culture-img {
   width: 100%;
-  height: auto;
-  min-height: 180px;
+  height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.c-photo-item:hover .culture-img,
+.c-photo-large:hover .culture-img {
+  transform: scale(1.04);
+}
+
+.culture-card-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: rgba(20, 28, 58, 0.85);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+/* Abhisanskaran & Campus Traditions Strip */
+.abhisanskaran-traditions-strip {
+  margin-top: 4.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.traditions-strip-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #3b3a6d;
+  margin-bottom: 2rem;
+}
+
+.traditions-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.35rem;
+}
+
+.tradition-photo-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ede7dc;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  height: 240px;
+}
+
+.tradition-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.tradition-photo-card:hover .tradition-img {
+  transform: scale(1.04);
+}
+
+.tradition-caption {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background-color: rgba(20, 28, 58, 0.85);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
 }
 
 @media (max-width: 1024px) {
-  .vlogs-media-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  
   .facilities-layout-grid,
   .food-accom-grid,
   .culture-split-grid {
     grid-template-columns: 1fr;
   }
+
+  .traditions-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 640px) {
-  .vlogs-media-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .culture-pillars-strip {
     grid-template-columns: 1fr;
   }
 
   .c-pillar-box:nth-child(3) {
     grid-column: span 1;
+  }
+
+  .culture-photo-stack,
+  .culture-photo-duo {
+    grid-template-columns: 1fr;
+  }
+
+  .traditions-gallery-grid {
+    grid-template-columns: 1fr;
   }
 }
