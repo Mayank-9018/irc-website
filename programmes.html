@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic & Exchange Programmes | IIM Mumbai</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo-invert-trimmed.png" alt="IIM Mumbai Logo" class="header-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="programmes.html" class="nav-link active">Programmes</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="index.html#metrics" class="nav-link">Rankings</a></li>
+          <li class="nav-item"><a href="#brochure" class="nav-link" id="navBrochureBtn">Brochure</a></li>
+          <li class="nav-item"><a href="#connect-section" class="nav-link">Connect</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="programmes.html" class="mobile-nav-link active">Programmes</a></li>
+        <li><a href="index.html#about" class="mobile-nav-link">About</a></li>
+        <li><a href="index.html#metrics" class="mobile-nav-link">Rankings</a></li>
+        <li><a href="#brochure" class="mobile-nav-link" id="mobileBrochureBtn">Brochure</a></li>
+        <li><a href="#connect-section" class="mobile-nav-link">Connect</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <div class="breadcrumb-trail">
+        <a href="index.html">Home</a> <span>/</span> <span class="current">Programmes</span>
+      </div>
+  
+      <h1 class="page-hero-title">Academic Programmes</h1>
+      <p class="page-hero-desc">
+        From the flagship MBA to a four-year digital science degree and a research-driven Ph.D. — each programme blends rigorous fundamentals with live industry engagement.
+      </p>
+
+      <!-- Filter Tabs -->
+      <div class="programme-filter-bar">
+        <button class="filter-tab active" data-filter="all">All Programmes</button>
+        <button class="filter-tab" data-filter="mba">Post Graduate (MBA)</button>
+        <button class="filter-tab" data-filter="exchange">International Exchange</button>
+        <button class="filter-tab" data-filter="doctoral">Doctoral & Research</button>
+        <button class="filter-tab" data-filter="immersion">Summer & Immersions</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programmes Grid Section -->
+  <section class="programmes-section">
+    <div class="container">
+
+      <div class="programmes-catalog-grid">
+
+        <!-- Card 1: MBA General Management -->
+        <div class="programme-card" data-category="mba">
+          <div class="programme-badge">Full-Time Degree</div>
+          <h3 class="programme-title">Master of Business Administration (MBA)</h3>
+          <p class="programme-summary">
+            Flagship two-year postgraduate degree designed to build strategic thinkers and general managers adept in finance, marketing, strategy, data-driven decision making, and leadership.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Duration</span>
+              <span class="meta-val">2 Years (6 Terms)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Medium</span>
+              <span class="meta-val">100% English</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Intake Term</span>
+              <span class="meta-val">July (Annual)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Exchange Term</span>
+              <span class="meta-val">Terms 4 or 5</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">AACSB Accredited</span>
+            <span class="highlight-tag">Fortune India Rank #8</span>
+            <span class="highlight-tag">Dual Specialization</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">Download Syllabus</a>
+            <a href="#exchange-structure" class="btn-text-link">Exchange Eligibility →</a>
+          </div>
+        </div>
+
+        <!-- Card 2: MBA OSCM -->
+        <div class="programme-card featured" data-category="mba">
+          <div class="programme-badge featured-badge">India's #1 Ranked Program</div>
+          <h3 class="programme-title">MBA in Operations & Supply Chain Management</h3>
+          <p class="programme-summary">
+            Pioneered by NITIE and acclaimed worldwide as India's premier supply chain leadership program. Combines logistics engineering, procurement analytics, global trade dynamics, and operations strategy.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Duration</span>
+              <span class="meta-val">2 Years (6 Terms)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Accreditation</span>
+              <span class="meta-val">EFMD & AACSB</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Industry Connect</span>
+              <span class="meta-val">150+ CXO Mentors</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Exchange Term</span>
+              <span class="meta-val">Terms 4, 5, or 6</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">Global Supply Chain Hub</span>
+            <span class="highlight-tag">UN-Backed Roots</span>
+            <span class="highlight-tag">Operations Analytics</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">Download Syllabus</a>
+            <a href="#exchange-structure" class="btn-text-link">Exchange Eligibility →</a>
+          </div>
+        </div>
+
+        <!-- Card 3: MBA Sustainability Management -->
+        <div class="programme-card" data-category="mba">
+          <div class="programme-badge">ESG & Climate Leadership</div>
+          <h3 class="programme-title">MBA in Sustainability Management (SM)</h3>
+          <p class="programme-summary">
+            Specialized curriculum at the intersection of business strategy, ESG compliance, renewable transitions, corporate governance, circular economy, and carbon accounting.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Duration</span>
+              <span class="meta-val">2 Years (6 Terms)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Global Focus</span>
+              <span class="meta-val">UN SDG Framework</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Medium</span>
+              <span class="meta-val">100% English</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Exchange Term</span>
+              <span class="meta-val">Terms 4 or 5</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">ESG Analytics</span>
+            <span class="highlight-tag">Carbon Finance</span>
+            <span class="highlight-tag">Corporate Responsibility</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">Download Syllabus</a>
+            <a href="#exchange-structure" class="btn-text-link">Exchange Eligibility →</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Inbound International Exchange -->
+        <div class="programme-card" data-category="exchange">
+          <div class="programme-badge exchange-badge">International Mobility</div>
+          <h3 class="programme-title">Inbound Student Exchange Programme</h3>
+          <p class="programme-summary">
+            Welcomes MBA and master's students from partner business schools worldwide for a term (3–4 months) at the lush Powai campus in Mumbai. Full tuition fee waiver under bilateral MOUs.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Tuition Fee</span>
+              <span class="meta-val">100% Waived (Bilateral)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Accommodation</span>
+              <span class="meta-val">Guaranteed On-Campus</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Terms Available</span>
+              <span class="meta-val">Autumn / Winter / Spring</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Credits</span>
+              <span class="meta-val">ECTS & US Compatible</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">Zero Tuition</span>
+            <span class="highlight-tag">Powai Lake Campus</span>
+            <span class="highlight-tag">Student Buddy Program</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">Inbound Factsheet</a>
+            <a href="#exchange-structure" class="btn-text-link">Academic Calendar →</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Outbound International Mobility -->
+        <div class="programme-card" data-category="exchange">
+          <div class="programme-badge exchange-badge">Study Abroad</div>
+          <h3 class="programme-title">Outbound Exchange Mobility</h3>
+          <p class="programme-summary">
+            IIM Mumbai MBA candidates in their second year spend a term abroad studying at world-renowned partner institutions across Europe, North America, Latin America, and Asia.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Partner Network</span>
+              <span class="meta-val">17+ Premier Institutes</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Continents</span>
+              <span class="meta-val">Europe, Americas, Asia</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Timing</span>
+              <span class="meta-val">Term 5 (Year 2)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Credit Transfer</span>
+              <span class="meta-val">Direct Degree Credit</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">Global Networking</span>
+            <span class="highlight-tag">Tuition Exemption</span>
+            <span class="highlight-tag">Cross-Cultural Exposure</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">Partner List</a>
+            <a href="#exchange-structure" class="btn-text-link">Nomination Criteria →</a>
+          </div>
+        </div>
+
+        <!-- Card 6: PhD / Doctoral Fellow Programme -->
+        <div class="programme-card" data-category="doctoral">
+          <div class="programme-badge">Research Excellence</div>
+          <h3 class="programme-title">Fellow Programme in Management (PhD)</h3>
+          <p class="programme-summary">
+            Advanced doctoral research program preparing scholars and university faculty in Operations Management, Decision Sciences, Financial Economics, Organization Behavior, and Technology Strategy.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Duration</span>
+              <span class="meta-val">4–5 Years</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Fellowship</span>
+              <span class="meta-val">Fully Funded + Contingency</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">International Track</span>
+              <span class="meta-val">Visiting Scholar Fellowships</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Publications</span>
+              <span class="meta-val">FT50 / ABDC 'A*' Journals</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">Full Stipend</span>
+            <span class="highlight-tag">Global Conference Grants</span>
+            <span class="highlight-tag">Academic Placements</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">PhD Prospectus</a>
+            <a href="#connect-section" class="btn-text-link">Faculty Supervisors →</a>
+          </div>
+        </div>
+
+        <!-- Card 7: Summer & Immersions -->
+        <div class="programme-card" data-category="immersion">
+          <div class="programme-badge">Short-Term Immersion</div>
+          <h3 class="programme-title">India Immersion & Summer Business School</h3>
+          <p class="programme-summary">
+            A bespoke 2-to-3-week academic and corporate immersion for international delegations, MBA cohorts, and faculty exploring Indian commerce, frugal innovation, fintech, and supply chain hubs.
+          </p>
+          <div class="programme-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Duration</span>
+              <span class="meta-val">2 to 3 Weeks</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Cohorts</span>
+              <span class="meta-val">International Partner Cohorts</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Visits</span>
+              <span class="meta-val">BSE, RBI, Ports, Tech Hubs</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Certification</span>
+              <span class="meta-val">IIM Mumbai Executive Cert</span>
+            </div>
+          </div>
+          <div class="programme-highlights">
+            <span class="highlight-tag">Industry Field Trips</span>
+            <span class="highlight-tag">Heritage & Culture</span>
+            <span class="highlight-tag">Customized Curricula</span>
+          </div>
+          <div class="programme-footer-action">
+            <a href="#brochureModal" class="btn btn-primary btn-sm open-brochure-modal">Immersion Brochure</a>
+            <a href="#connect-section" class="btn-text-link">Request Custom Cohort →</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Exchange Academic Structure & Calendar Section -->
+  <section class="exchange-framework-section" id="exchange-structure">
+    <div class="container">
+      <div class="section-tag">INTERNATIONAL EXCHANGE ARCHITECTURE</div>
+      <h2 class="section-title">Academic Structure & Term Calendar (2026–27)</h2>
+
+      <div class="academic-calendar-grid">
+        <div class="term-card">
+          <div class="term-number">Term IV</div>
+          <h4 class="term-season">Autumn Term</h4>
+          <p class="term-dates">September – December</p>
+          <ul class="term-features">
+            <li>Core Electives in Advanced Supply Chain & Analytics</li>
+            <li>Financial Modeling & Corporate Valuation</li>
+            <li>Inbound Student Orientation & Cultural Immersion</li>
+            <li>Nominations Deadline: <strong>May 15</strong></li>
+          </ul>
+        </div>
+
+        <div class="term-card active-term">
+          <div class="term-badge-tag">Most Popular for Exchange</div>
+          <div class="term-number">Term V</div>
+          <h4 class="term-season">Winter Term</h4>
+          <p class="term-dates">January – March</p>
+          <ul class="term-features">
+            <li>Strategic Management & Global Business Environment</li>
+            <li>Sustainable Logistics & ESG Metrics</li>
+            <li>Annual International Management Conclave</li>
+            <li>Nominations Deadline: <strong>October 15</strong></li>
+          </ul>
+        </div>
+
+        <div class="term-card">
+          <div class="term-number">Term VI</div>
+          <h4 class="term-season">Spring Term</h4>
+          <p class="term-dates">April – June</p>
+          <ul class="term-features">
+            <li>Capstone Business Simulations & Field Projects</li>
+            <li>Entrepreneurship & Venture Creation in India</li>
+            <li>Executive Roundtable & Industry Masterclasses</li>
+            <li>Nominations Deadline: <strong>January 15</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Credit Equivalency Table Box -->
+      <div class="credit-system-box">
+        <h3 class="credit-box-title">Grading System & Credit Equivalency</h3>
+        <p class="credit-box-desc">
+          Courses at IIM Mumbai follow a rigorous grading matrix with 1 credit typically corresponding to 30 contact hours. All instruction and examinations are conducted strictly in English.
+        </p>
+        <div class="credit-metrics-row">
+          <div class="credit-metric">
+            <span class="c-metric-val">1 Course (3 Credits)</span>
+            <span class="c-metric-sub">~30 Class Hours = 6 ECTS / 3 US Credits</span>
+          </div>
+          <div class="credit-metric">
+            <span class="c-metric-val">Typical Term Workload</span>
+            <span class="c-metric-sub">4 to 5 Courses (12 to 15 IIM Credits / 24–30 ECTS)</span>
+          </div>
+          <div class="credit-metric">
+            <span class="c-metric-val">Language of Instruction</span>
+            <span class="c-metric-sub">100% English medium across all lectures & materials</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="cta-banner-text">
+          <h3 class="cta-title">Explore Academic Partnership & Student Exchange</h3>
+          <p class="cta-desc">
+            Connect with our International Relations Office to discuss bilateral MOUs, inbound nominations, or custom immersion programs for your university.
+          </p>
+        </div>
+        <div class="cta-banner-actions">
+          <button class="btn btn-primary open-brochure-modal">Download 2026–27 Brochure</button>
+          <a href="index.html#connect-section" class="btn btn-outline">Connect with IR Office</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="connect-section">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span class="institute-name">IIM Mumbai</span>
+            <span class="sub-name">INTERNATIONAL RELATIONS OFFICE</span>
+          </div>
+          <p class="footer-tagline">
+            Fostering global scholastic cooperation, cross-cultural mobility, and management research excellence since 1963.
+          </p>
+          <div class="footer-address">
+            📍 Vihar Lake Road, Powai, Mumbai, Maharashtra 400087, India
+          </div>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p class="contact-item"><strong>Email:</strong> ir@iimmumbai.ac.in</p>
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-btn">in</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-btn">𝕏</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-btn">ig</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Indian Institute of Management Mumbai. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Exchange</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Brochure Modal -->
+  <div class="modal-backdrop" id="brochureModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge">Official Document</div>
+        <h3 class="modal-title">Download 2026–27 International Relations Brochure</h3>
+        <p class="modal-subtitle">Get complete details on course curricula, partner universities, visa guidelines, and housing terms.</p>
+      </div>
+      <form class="modal-form" id="brochureForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="e.g. Dr. Eleanor Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="institution">University / Institution</label>
+          <input type="text" id="institution" placeholder="e.g. EMLYON Business School" required>
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Official Email</label>
+          <input type="email" id="emailAddress" placeholder="e.g. e.vance@em-lyon.edu" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Download Official PDF</button>
+      </form>
+      <div class="modal-success-msg" id="modalSuccessMsg">
+        🎉 Thank you! The international prospectus download has started.
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>

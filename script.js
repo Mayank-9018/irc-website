@@ -54,6 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileBrochureBtn) mobileBrochureBtn.addEventListener('click', openModal);
   if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
 
+  // Universal open brochure modal class trigger
+  const genericBrochureBtns = document.querySelectorAll('.open-brochure-modal');
+  genericBrochureBtns.forEach(btn => {
+    btn.addEventListener('click', openModal);
+  });
+
   // Close modal on outside click
   if (brochureModal) {
     brochureModal.addEventListener('click', (e) => {
@@ -69,6 +75,30 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
+
+  // --- Programmes Filter Functionality ---
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const programmeCards = document.querySelectorAll('.programme-card');
+
+  if (filterTabs.length > 0 && programmeCards.length > 0) {
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filterValue = tab.getAttribute('data-filter');
+
+        programmeCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filterValue === 'all' || category === filterValue) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
 
   // --- Brochure Form Submission ---
   if (brochureForm) {
@@ -98,25 +128,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section[id], footer[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  window.addEventListener('scroll', () => {
-    let currentSection = 'home';
-    const scrollPosition = window.pageYOffset + 140;
+  if (sections.length > 0 && navLinks.length > 0) {
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      const scrollPosition = window.pageYOffset + 140;
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        currentSection = section.getAttribute('id');
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      if (currentSection) {
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (href === `#${currentSection}`) {
+            link.classList.add('active');
+          } else if (href && href.startsWith('#')) {
+            link.classList.remove('active');
+          }
+        });
       }
     });
-
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (href === `#${currentSection}` || (currentSection === 'home' && href === '#home')) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  });
+  }
 });
