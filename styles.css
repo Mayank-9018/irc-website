@@ -177,8 +177,7 @@ ul {
 }
 
 .header-logo-img {
-  height: 48px;
-  max-height: 54px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   display: block;
