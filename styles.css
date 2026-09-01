@@ -2154,7 +2154,8 @@ ul {
   transition: transform 0.3s ease;
 }
 
-.vlog-media-item.item-large {
+.vlog-media-item.item-large,
+.vlog-media-item.item-portrait {
   background-color: #000000;
   height: 100%;
 }
@@ -2183,6 +2184,75 @@ ul {
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
+}
+
+/* Instagram Reels Spotlight Strip */
+.instagram-reels-strip {
+  margin-top: 3.5rem;
+  padding-top: 2.75rem;
+  border-top: 1px solid rgba(75, 60, 115, 0.15);
+}
+
+.reels-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.reels-main-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3b3a6d;
+  margin-top: 0.35rem;
+}
+
+.instagram-follow-btn {
+  background-color: #ffffff;
+  color: #c13584;
+  border: 1px solid #dfd4ea;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 0.5rem 1.15rem;
+  border-radius: 6px;
+  transition: var(--transition-smooth);
+}
+
+.instagram-follow-btn:hover {
+  background-color: #c13584;
+  color: #ffffff;
+  border-color: #c13584;
+}
+
+.instagram-reels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.instagram-reel-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ded5eb;
+  min-height: 480px;
+}
+
+.instagram-iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .instagram-reels-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Facilities Section */
