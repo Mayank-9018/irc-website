@@ -391,6 +391,10 @@ ul {
   letter-spacing: -0.02em;
 }
 
+.stat-value.stat-highlight {
+  color: var(--color-terracotta);
+}
+
 .stat-label {
   font-size: 0.76rem;
   color: var(--color-text-muted);
