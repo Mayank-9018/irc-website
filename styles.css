@@ -1784,24 +1784,212 @@ ul {
   line-height: 1.4;
 }
 
-/* World Map Section */
+/* World Map Section (Clean & Simple with Dynamic Pins) */
 .partners-map-section {
   background-color: #faf7f2;
   padding: 3rem 0 1.5rem;
 }
 
 .map-wrapper-frame {
-  border-radius: 8px;
+  position: relative;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(18, 24, 45, 0.08);
-  background: #0f162e;
+  box-shadow: 0 12px 36px rgba(18, 24, 45, 0.12);
+  background: #0b1126;
+  border: 1px solid #dfd6c7;
 }
 
-.partners-world-map-img {
+.pure-interactive-map {
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 2000 / 857;
+  min-height: 480px;
+  background: #0b1126;
+  overflow: hidden;
+}
+
+.map-vector-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Pins Layer */
+.map-pins-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Individual Pin */
+.map-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.map-pin .pin-dot {
+  width: 11px;
+  height: 11px;
+  background: #b84227;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(184, 66, 39, 0.9), 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.map-pin .pin-beacon {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(184, 66, 39, 0.35);
+  animation: beaconPulse 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  pointer-events: none;
+}
+
+@keyframes beaconPulse {
+  0% {
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.0);
+    opacity: 0;
+  }
+}
+
+/* Hub Marker (IIM Mumbai) */
+.map-pin.pin-hub .pin-dot {
+  width: 15px;
+  height: 15px;
+  background: #d48332;
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 0 14px rgba(212, 131, 50, 0.95), 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.map-pin.pin-hub .pin-beacon {
+  width: 36px;
+  height: 36px;
+  background: rgba(212, 131, 50, 0.4);
+  animation: hubBeaconPulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes hubBeaconPulse {
+  0% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* Pin Hover Effect */
+.map-pin:hover .pin-dot {
+  transform: scale(1.6);
+  background: #e59d48;
+  box-shadow: 0 0 16px rgba(229, 157, 72, 1), 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.map-pin:hover {
+  z-index: 25;
+}
+
+/* Tooltip on Hover: University Name and Country */
+.pin-label {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background: rgba(11, 17, 38, 0.94);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 6px;
+  padding: 0.35rem 0.65rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  z-index: 30;
+}
+
+.pin-label-name {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.pin-label-country {
+  font-size: 0.65rem;
+  color: #d48332;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.map-pin.pin-hub .pin-label-country {
+  color: #48bb78;
+}
+
+/* Tooltip display on hover */
+.map-pin:hover .pin-label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Downward positioning for northern hemisphere pins */
+.map-pin[data-align="bottom"] .pin-label {
+  bottom: auto;
+  top: calc(100% + 8px);
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.map-pin[data-align="bottom"]:hover .pin-label {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Right-aligned positioning */
+.map-pin[data-align-x="right"] .pin-label {
+  left: auto;
+  right: 0;
+  transform: translateY(4px);
+}
+
+.map-pin[data-align-x="right"]:hover .pin-label {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .pure-interactive-map {
+    min-height: 360px;
+  }
 }
 
 /* Matrix Directory & Filter Section */
